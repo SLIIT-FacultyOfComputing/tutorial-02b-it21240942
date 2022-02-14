@@ -21,3 +21,22 @@ int main()
     printf("Factorial of %d is %ld\n", no, fac);  
     return 0;
 }
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int no;
+  long fac;
+
+  cout << "Enter a number : ";
+  cin >> no ;
+
+  fac=1;
+  for (int r=no ;r >=1 ; r--)
+  {
+    fac = fac * r;
+  }
+  cout << "Factorial of  " << no << "="<<fac << endl;
+  return 0;
+}
